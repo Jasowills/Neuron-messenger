@@ -14,16 +14,17 @@ const MessageContainer = () => {
 	}, [setSelectedConversation]);
 
 	return (
-		<div className='md:min-w-[450px] flex flex-col'>
+		<div className='md:min-w-[450px] w-[100%] bg-[#282A2D] flex flex-col'>
 			{!selectedConversation ? (
 				<NoChatSelected />
 			) : (
 				<>
 					{/* Header */}
-					<div className='bg-slate-500 px-4 py-2 mb-2'>
-						<span className='label-text'>To:</span>{" "}
-						<span className='text-gray-900 font-bold'>{selectedConversation.fullName}</span>
-					</div>
+					<div className='bg-[#2E3033] px-4 py-2 mb-2  flex justify-center sm:justify-start h-12 sm:h-auto'>  
+					  <span className='label-text mt-1'>To: </span> &nbsp; {"  "}
+    <span className='text-white font-bold mt-1'>{selectedConversation.fullName}</span>
+</div>
+
 					<Messages />
 					<MessageInput />
 				</>
