@@ -10,7 +10,9 @@ body {
 	background-position: center;
 }
 
-
+.red{
+	background-color: #171717;
+}
 /* dark mode looking scrollbar */
 ::-webkit-scrollbar {
 	width: 8px;

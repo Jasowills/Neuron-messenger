@@ -10,12 +10,12 @@ const MobileSidebar = () => {
   };
 
   return (
-    <div>
+    <div className="red">
       {/* Menu icon */}
-      <div className="fixed top-0 left-0 z-50 p-4 mr-4">
+      <div className="fixed top-0  bg-[#171717] left-0 z-50 p-4 mr-4">
         <button
           onClick={toggleSidebar}
-          className="text-white text-2xl focus:outline-none"
+          className="text-white  text-2xl focus:outline-none"
         >
           <AiOutlineMenu />
         </button>
@@ -25,7 +25,7 @@ const MobileSidebar = () => {
       {isOpen && (
         <div>
           <div className="fixed top-0  left-0 z-50 w-4/5 h-full bg-[#212326]">
-            <div className="flex justify-left p-4">
+            <div className="flex justify-left red p-4">
               <button
                 onClick={toggleSidebar}
                 className="text-white text-2xl focus:outline-none"

@@ -9,7 +9,7 @@ const useSignup = () => {
 	const signup = async ({ fullName, username, password, confirmPassword, gender, profilePic }) => {
 		const success = handleInputErrors({ fullName, username, password, confirmPassword, gender, profilePic });
 		if (!success) return;
-
+        console.log(fullName, username, password, confirmPassword, gender, profilePic)
 		setLoading(true);
 		try {
 			const res = await fetch("/api/auth/signup", {
